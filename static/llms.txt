@@ -1,0 +1,35 @@
+# Le Mag Habitat
+
+> Le magazine qui accompagne vos travaux, votre énergie et l'entretien de votre maison au quotidien.
+
+## À propos
+
+Le Mag Habitat est un magazine dédié à l'univers de la maison : énergie et consommation, équipement et réparation, travaux et rénovation, aménagement et décoration, entretien du quotidien. Des articles pratiques et concrets pour aider les propriétaires et locataires à mieux gérer leur logement.
+
+## Contenu principal
+
+- Énergie et consommation (chauffage, solaire, économies d'énergie, factures)
+- Équipement et réparation (électroménager, diagnostic de panne, reconditionné)
+- Travaux et rénovation (isolation, plomberie, électricité, petits travaux)
+- Aménagement et décoration (décoration intérieure, rangement, extérieur)
+- Entretien de la maison (nettoyage, astuces naturelles, organisation)
+
+## Articles récents
+
+- Dix gestes simples pour réduire sa facture d'électricité : https://le-mag-habitat.fr/blog/reduire-facture-electricite/
+- Comment lire sa facture d'électricité : https://le-mag-habitat.fr/blog/lire-facture-electricite/
+- Où acheter un réfrigérateur reconditionné : https://le-mag-habitat.fr/blog/acheter-refrigerateur-reconditionne/
+- Réparer ou remplacer son électroménager, comment choisir : https://le-mag-habitat.fr/blog/reparer-remplacer-electromenager/
+- Isolation des combles, par où commencer : https://le-mag-habitat.fr/blog/isolation-combles-par-ou-commencer/
+- Fuite d'eau, les premiers gestes avant l'intervention d'un plombier : https://le-mag-habitat.fr/blog/fuite-eau-premiers-gestes-plombier/
+- Astuces de rangement pour un petit espace : https://le-mag-habitat.fr/blog/astuces-rangement-petit-espace/
+- Aménager une terrasse avec un petit budget : https://le-mag-habitat.fr/blog/amenager-terrasse-petit-budget/
+- Nettoyer un four sans produits chimiques : https://le-mag-habitat.fr/blog/nettoyer-four-sans-produits-chimiques/
+- Organiser son quotidien à la maison, nos astuces : https://le-mag-habitat.fr/blog/organiser-quotidien-maison/
+
+## Informations techniques
+
+- Générateur : Hugo
+- Hébergement : GitHub Pages
+- Sitemap : https://le-mag-habitat.fr/sitemap.xml
+- RSS : https://le-mag-habitat.fr/index.xml

@@ -1,0 +1,121 @@
+{{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $isTerm := eq .Kind "term" }}
+
+<section class="list-header">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="list-description">{{ . }}</p>{{ end }}
+        <span class="list-count">{{ len .Pages }} {{ if gt (len .Pages) 1 }}articles{{ else }}article{{ end }}</span>
+    </div>
+</section>
+
+{{ if $isTerm }}
+{{ $allTags := index site.Data.category_tags .Title }}
+{{ if not $allTags }}
+    {{ $allTags = slice }}
+    {{ range .Pages }}{{ range .Params.tags }}{{ $allTags = $allTags | append . }}{{ end }}{{ end }}
+    {{ $allTags = $allTags | uniq | sort }}
+{{ end }}
+{{ if $allTags }}
+<section class="list-filters">
+    <div class="container">
+        <div class="filters-search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" class="filters-search-input" placeholder="{{ if eq $lang "en" }}Search in this category…{{ else }}Rechercher dans cette catégorie…{{ end }}" aria-label="{{ if eq $lang "en" }}Search in this category{{ else }}Rechercher dans cette catégorie{{ end }}">
+        </div>
+        <div class="filters-tags" role="group" aria-label="{{ if eq $lang "en" }}Filter by tag{{ else }}Filtrer par tag{{ end }}">
+            {{ range $allTags }}
+            <button type="button" class="filter-tag" data-tag="{{ . | lower }}">{{ . }}</button>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<section class="list-content">
+    <div class="container">
+        <div class="articles-list" id="articles-list">
+            {{ range .Pages.ByDate.Reverse }}
+            {{ $tagsLower := slice }}
+            {{ range .Params.tags }}{{ $tagsLower = $tagsLower | append (. | lower) }}{{ end }}
+            <article class="article-card-horizontal" data-title="{{ lower .Title }} {{ lower .Description }}" data-tags="{{ delimit $tagsLower "|" }}">
+                <a href="{{ .RelPermalink }}" class="card-link-overlay" aria-label="{{ .Title }}"></a>
+                <a href="{{ .RelPermalink }}" class="article-card-horizontal-image-wrapper" aria-label="{{ .Title }}" tabindex="-1">
+                    {{ if .Params.image }}
+                    <img src="{{ .Params.image | relURL }}" alt="{{ .Params.imageAlt | default .Title }}" class="article-card-horizontal-image" loading="lazy" width="300" height="200">
+                    {{ else }}
+                    <span class="article-card-horizontal-image article-card-image-placeholder" aria-hidden="true">{{ slicestr .Title 0 1 }}</span>
+                    {{ end }}
+                </a>
+                <div class="article-body">
+                    <div class="article-meta">
+                        {{ with .Params.categories }}
+                        <a href="{{ printf "categories/%s/" (index . 0 | urlize) | relURL }}" class="article-category card-inner-link">{{ index . 0 }}</a>
+                        {{ end }}
+                        <time>{{ .Date | time.Format "2 January 2006" }}</time>
+                        {{ if .Params.readingTime }}
+                        <span class="reading-time">{{ .ReadingTime }} min</span>
+                        {{ end }}
+                    </div>
+                    <h2><a href="{{ .RelPermalink }}" class="card-inner-link">{{ .Title }}</a></h2>
+                    <p>{{ .Description }}</p>
+                    <div class="article-tags">
+                        {{ range .Params.tags }}
+                        <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" class="tag card-inner-link">#{{ . }}</a>
+                        {{ end }}
+                    </div>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        <p class="filters-empty" id="filters-empty" hidden>{{ if eq $lang "en" }}No articles match your search.{{ else }}Aucun article ne correspond à votre recherche.{{ end }}</p>
+    </div>
+</section>
+
+{{ if $isTerm }}
+<script>
+(function() {
+    var searchInput = document.querySelector('.filters-search-input');
+    var tagButtons = Array.from(document.querySelectorAll('.filter-tag'));
+    var cards = Array.from(document.querySelectorAll('#articles-list .article-card-horizontal'));
+    var emptyMsg = document.getElementById('filters-empty');
+    var activeTags = new Set();
+
+    function applyFilters() {
+        var query = (searchInput ? searchInput.value.trim().toLowerCase() : '');
+        var visibleCount = 0;
+        cards.forEach(function(card) {
+            var title = card.getAttribute('data-title') || '';
+            var tags = (card.getAttribute('data-tags') || '').split('|');
+            var matchesSearch = !query || title.indexOf(query) !== -1;
+            var matchesTags = activeTags.size === 0 || tags.some(function(t) { return activeTags.has(t); });
+            var visible = matchesSearch && matchesTags;
+            card.style.display = visible ? '' : 'none';
+            if (visible) visibleCount++;
+        });
+        if (emptyMsg) emptyMsg.hidden = visibleCount !== 0;
+    }
+
+    if (searchInput) {
+        searchInput.addEventListener('input', applyFilters);
+    }
+    tagButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var tag = btn.getAttribute('data-tag');
+            if (activeTags.has(tag)) {
+                activeTags.delete(tag);
+                btn.classList.remove('active');
+            } else {
+                activeTags.add(tag);
+                btn.classList.add('active');
+            }
+            applyFilters();
+        });
+    });
+})();
+</script>
+{{ end }}
+
+{{ end }}

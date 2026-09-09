@@ -1,0 +1,5 @@
+[
+{{ range $i, $p := where .Site.RegularPages "Section" "blog" }}{{ if $i }},{{ end }}
+{"title": {{ .Title | jsonify }}, "description": {{ .Description | jsonify }}, "url": {{ .RelPermalink | jsonify }}, "category": {{ (index (.Params.categories | default (slice)) 0) | default "" | jsonify }} }
+{{- end }}
+]

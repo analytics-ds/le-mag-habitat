@@ -1,0 +1,79 @@
+{{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $authorId := .Params.authorId }}
+{{ $author := index site.Data.authors $authorId }}
+
+<section class="author-page">
+    <div class="container container-narrow">
+        <nav class="breadcrumb" aria-label="{{ if eq $lang "en" }}Breadcrumb{{ else }}Fil d'Ariane{{ end }}">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="{{ "/" | relURL }}">{{ if eq $lang "en" }}Home{{ else }}Accueil{{ end }}</a>
+                    <svg class="breadcrumb-sep" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 4 10 8 6 12" /></svg>
+                </li>
+                <li class="breadcrumb-item">
+                    <span aria-current="page">{{ .Title }}</span>
+                </li>
+            </ol>
+        </nav>
+
+        {{ with $author }}
+        <div class="author-page-header">
+            {{ with .avatar }}
+            <img src="{{ . | relURL }}" alt="{{ $author.name }}" class="author-page-avatar" width="120" height="120" loading="lazy">
+            {{ else }}
+            <div class="author-page-avatar author-avatar-placeholder" aria-hidden="true">{{ slicestr $author.name 0 1 }}</div>
+            {{ end }}
+            <div>
+                <h1 class="author-page-name">{{ .name }}</h1>
+                {{ with index .role $lang }}
+                <p class="author-page-role">{{ . }}</p>
+                {{ end }}
+            </div>
+        </div>
+
+        {{ with index .bio $lang }}
+        <p class="author-page-bio">{{ . }}</p>
+        {{ end }}
+
+        {{ with index .expertise $lang }}
+        <div class="author-page-expertise">
+            <span class="author-box-expertise-label">{{ if eq $lang "en" }}Expertise:{{ else }}Expertise :{{ end }}</span>
+            {{ range $i, $e := . }}{{ if $i }}, {{ end }}<span class="author-box-expertise-item">{{ $e }}</span>{{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+
+        {{ $articles := where site.RegularPages "Params.author" $authorId }}
+        {{ $articles = where $articles "Section" "blog" }}
+        {{ if $articles }}
+        <h2 class="author-page-articles-title">{{ if eq $lang "en" }}Articles by {{ with $author }}{{ .name }}{{ end }}{{ else }}Articles de {{ with $author }}{{ .name }}{{ end }}{{ end }}</h2>
+        <div class="articles-list">
+            {{ range $articles.ByDate.Reverse }}
+            <article class="article-card-horizontal">
+                <a href="{{ .RelPermalink }}" class="card-link-overlay" aria-label="{{ .Title }}"></a>
+                <a href="{{ .RelPermalink }}" class="article-card-horizontal-image-wrapper" aria-label="{{ .Title }}" tabindex="-1">
+                    {{ if .Params.image }}
+                    <img src="{{ .Params.image | relURL }}" alt="{{ .Params.imageAlt | default .Title }}" class="article-card-horizontal-image" loading="lazy" width="300" height="200">
+                    {{ else }}
+                    <span class="article-card-horizontal-image article-card-image-placeholder" aria-hidden="true">{{ slicestr .Title 0 1 }}</span>
+                    {{ end }}
+                </a>
+                <div class="article-body">
+                    <div class="article-meta">
+                        {{ with .Params.categories }}
+                        <a href="{{ printf "categories/%s/" (index . 0 | urlize) | relURL }}" class="article-category card-inner-link">{{ index . 0 }}</a>
+                        {{ end }}
+                        <time>{{ .Date | time.Format "2 January 2006" }}</time>
+                    </div>
+                    <h2><a href="{{ .RelPermalink }}" class="card-inner-link">{{ .Title }}</a></h2>
+                    <p>{{ .Description }}</p>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+{{ end }}

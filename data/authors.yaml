@@ -1,0 +1,147 @@
+# Auteurs du blog Le Mag Habitat — 3 profils fictifs specialises
+# Hugo le lit nativement via `.Site.Data.authors` dans les templates.
+#
+# Structure : map d'auteurs indexee par ID (slug)
+# L'ID est utilise dans le frontmatter des articles comme `author: julien-vasseur`
+# et dans le chemin des pages auteur `content/auteurs/[id].md`
+
+julien-vasseur:
+  id: julien-vasseur
+  name: Julien Vasseur
+  type: person
+  avatar: "/images/authors/julien-vasseur.svg"
+  linkedinUrl: ""
+  categories:
+    - Énergie et consommation
+  jobTitle:
+    fr: Ingénieur énergie, ancien chauffagiste
+    en: Energy engineer, former heating technician
+  role:
+    fr: Expert chauffage & énergies renouvelables
+    en: Heating & renewable energy expert
+  bio:
+    fr: "J'ai passé douze ans sur le terrain comme chauffagiste avant de devenir ingénieur énergie. J'ai vu défiler des centaines de chaudières, de pompes à chaleur et d'installations solaires, et je m'appuie aujourd'hui sur cette expérience pour décrypter les factures et comparer les solutions de chauffage sans jargon inutile. Je continue de suivre de près les évolutions du solaire et des énergies renouvelables, avec un seul objectif : aider les foyers à mieux comprendre leur consommation et à réduire leurs factures sans sacrifier leur confort."
+    en: "I spent twelve years working as a heating technician before becoming an energy engineer. I've seen hundreds of boilers, heat pumps and solar installations up close, and I now draw on that experience to break down energy bills and compare heating solutions without unnecessary jargon. I keep a close eye on developments in solar and renewable energy, with one goal in mind: helping households better understand their consumption and cut their bills without sacrificing comfort."
+  expertise:
+    fr:
+      - Chauffage
+      - Énergies renouvelables
+      - Solaire
+      - Pompes à chaleur
+      - Consommation énergétique
+      - Isolation thermique
+    en:
+      - Heating
+      - Renewable energy
+      - Solar power
+      - Heat pumps
+      - Energy consumption
+      - Thermal insulation
+  topics:
+    - énergie
+    - chauffage
+    - solaire
+    - panneaux solaires
+    - pompe à chaleur
+    - consommation
+    - facture énergie
+    - électricité
+    - chaudière
+    - radiateur
+    - économie d'énergie
+
+marc-antoine-reyes:
+  id: marc-antoine-reyes
+  name: Marc-Antoine Reyes
+  type: person
+  avatar: "/images/authors/marc-antoine-reyes.svg"
+  linkedinUrl: ""
+  categories:
+    - Équipement et réparation
+    - Travaux et rénovation
+  jobTitle:
+    fr: Ancien technicien SAV électroménager
+    en: Former appliance repair technician
+  role:
+    fr: Expert électroménager, réparation & travaux
+    en: Appliances, repair & renovation expert
+  bio:
+    fr: "J'ai réparé des centaines de machines pendant quinze ans en service après-vente avant de me consacrer à l'écriture. J'ai démonté des lave-linge récalcitrants, dépanné des réfrigérateurs en pleine canicule et conseillé des clients hésitant entre réparer et racheter. Je mets aujourd'hui cette expérience de terrain au service des lecteurs : diagnostiquer une panne, savoir quand réparer plutôt que remplacer, et se lancer dans des travaux de rénovation sans mauvaise surprise ni jargon technique."
+    en: "I repaired hundreds of appliances over fifteen years in after-sales service before turning to writing. I've taken apart stubborn washing machines, fixed refrigerators in the middle of a heatwave, and advised customers torn between repairing and buying new. I now put that hands-on experience to work for readers: diagnosing a breakdown, knowing when to repair rather than replace, and tackling renovation work without unpleasant surprises or technical jargon."
+  expertise:
+    fr:
+      - Électroménager
+      - Réparation
+      - Reconditionné
+      - Plomberie
+      - Électricité
+      - Petits travaux
+    en:
+      - Appliances
+      - Repair
+      - Refurbished
+      - Plumbing
+      - Electrics
+      - Small building work
+  topics:
+    - électroménager
+    - réparation
+    - panne
+    - reconditionné
+    - lave-linge
+    - sèche-linge
+    - réfrigérateur
+    - congélateur
+    - four
+    - lave-vaisselle
+    - plomberie
+    - électricité
+    - isolation
+    - travaux
+    - bricolage
+    - rénovation
+
+camille-dubreuil:
+  id: camille-dubreuil
+  name: Camille Dubreuil
+  type: person
+  avatar: "/images/authors/camille-dubreuil.svg"
+  linkedinUrl: ""
+  categories:
+    - Aménagement et décoration
+    - Entretien de la maison
+  jobTitle:
+    fr: Décoratrice d'intérieur
+    en: Interior decorator
+  role:
+    fr: Experte déco & astuces maison
+    en: Decor & home tips expert
+  bio:
+    fr: "J'exerce comme décoratrice d'intérieur depuis huit ans, principalement auprès de particuliers qui veulent transformer leur logement sans tout casser ni tout racheter. J'ai appris à tirer le meilleur parti des petits espaces, à dénicher des astuces de rangement qui fonctionnent vraiment au quotidien, et à entretenir une maison au naturel sans perdre des heures. Je partage ici mes conseils pour aménager à petit budget et garder un intérieur agréable à vivre, sans jamais sacrifier le style."
+    en: "I've worked as an interior decorator for eight years, mostly with homeowners who want to transform their space without knocking down walls or buying everything new. I've learned how to make the most of small spaces, find storage tricks that actually work day to day, and keep a home clean and natural without wasting hours on it. Here, I share my tips for decorating on a small budget and keeping a home pleasant to live in, without ever sacrificing style."
+  expertise:
+    fr:
+      - Décoration intérieure
+      - Rangement
+      - Nettoyage naturel
+      - Aménagement extérieur
+      - Petit espace
+      - Astuces maison
+    en:
+      - Interior decor
+      - Storage
+      - Natural cleaning
+      - Outdoor design
+      - Small spaces
+      - Home tips
+  topics:
+    - décoration
+    - aménagement
+    - rangement
+    - petit espace
+    - petit budget
+    - nettoyage
+    - astuces naturelles
+    - entretien maison
+    - décoration extérieure
+    - tendances déco

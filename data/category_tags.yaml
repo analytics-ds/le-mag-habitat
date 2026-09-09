@@ -1,0 +1,78 @@
+# Vocabulaire fixe des tags par categorie, affiche dans les filtres des pages categorie
+# meme si aucun article ne porte encore ce tag. Cle = titre exact de la categorie (FR ou EN).
+
+"Énergie et consommation":
+  - Chauffage
+  - Solaire
+  - Consommation
+  - "Économie d'énergie"
+
+"Équipement et réparation":
+  - Lave-Linge
+  - Sèche-Linge
+  - Réfrigérateur
+  - Congélateur
+  - Four
+  - Lave-vaisselle
+  - Réparation électroménager
+  - Panne
+  - Reconditionné
+
+"Travaux et rénovation":
+  - Isolation
+  - Plomberie
+  - Électricité
+  - Travaux
+  - Urgence
+  - Rénovation énergétique
+
+"Aménagement et décoration":
+  - Rangement
+  - Petit espace
+  - Petit budget
+  - "Décoration intérieur"
+  - "Décoration extérieur"
+  - Tendances
+
+"Entretien de la maison":
+  - Nettoyage
+  - Naturelles
+  - Astuces
+
+"Energy and consumption":
+  - Heating
+  - Solar
+  - Consumption
+  - Energy savings
+
+"Appliances and repair":
+  - Washing machine
+  - Tumble dryer
+  - Refrigerator
+  - Freezer
+  - Oven
+  - Dishwasher
+  - Appliance repair
+  - Breakdown
+  - Refurbished
+
+"Renovation and building work":
+  - Insulation
+  - Plumbing
+  - Electrics
+  - Building work
+  - Emergency
+  - Energy renovation
+
+"Interior design and decor":
+  - Storage
+  - Small space
+  - Small budget
+  - Interior decor
+  - Outdoor decor
+  - Trends
+
+"Home maintenance":
+  - Cleaning
+  - Natural
+  - Tips

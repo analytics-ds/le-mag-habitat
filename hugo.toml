@@ -1,0 +1,137 @@
+baseURL = "https://le-mag-habitat.fr/"
+title = "Le Mag Habitat"
+theme = "le-mag-habitat-theme"
+removePathAccents = true
+
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
+
+[[module.mounts]]
+  source = "content"
+  target = "content"
+  lang = "fr"
+  excludeFiles = "en/**"
+
+[[module.mounts]]
+  source = "content/en"
+  target = "content"
+  lang = "en"
+
+[[module.mounts]]
+  source = "data"
+  target = "data"
+
+[[module.mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[module.mounts]]
+  source = "i18n"
+  target = "i18n"
+
+[[module.mounts]]
+  source = "archetypes"
+  target = "archetypes"
+
+[[module.mounts]]
+  source = "assets"
+  target = "assets"
+
+[[module.mounts]]
+  source = "static"
+  target = "static"
+
+[languages]
+  [languages.fr]
+    languageCode = "fr-FR"
+    languageName = "Français"
+    weight = 1
+    title = "Le Mag Habitat"
+    [languages.fr.params]
+      description = "Le magazine qui accompagne vos travaux, votre énergie et l'entretien de votre maison au quotidien."
+
+  [languages.en]
+    languageCode = "en-US"
+    languageName = "English"
+    weight = 2
+    title = "Le Mag Habitat"
+    [languages.en.params]
+      description = "The magazine that guides your home renovation, energy and everyday maintenance projects."
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[[languages.fr.menus.main]]
+  name = "Énergie et consommation"
+  url = "/categories/energie-et-consommation/"
+  weight = 1
+[[languages.fr.menus.main]]
+  name = "Équipement et réparation"
+  url = "/categories/equipement-et-reparation/"
+  weight = 2
+[[languages.fr.menus.main]]
+  name = "Travaux et rénovation"
+  url = "/categories/travaux-et-renovation/"
+  weight = 3
+[[languages.fr.menus.main]]
+  name = "Aménagement et décoration"
+  url = "/categories/amenagement-et-decoration/"
+  weight = 4
+[[languages.fr.menus.main]]
+  name = "Entretien de la maison"
+  url = "/categories/entretien-de-la-maison/"
+  weight = 5
+
+[[languages.en.menus.main]]
+  name = "Energy and consumption"
+  url = "/en/categories/energy-and-consumption/"
+  weight = 1
+[[languages.en.menus.main]]
+  name = "Appliances and repair"
+  url = "/en/categories/appliances-and-repair/"
+  weight = 2
+[[languages.en.menus.main]]
+  name = "Renovation and building work"
+  url = "/en/categories/renovation-and-building-work/"
+  weight = 3
+[[languages.en.menus.main]]
+  name = "Interior design and decor"
+  url = "/en/categories/interior-design-and-decor/"
+  weight = 4
+[[languages.en.menus.main]]
+  name = "Home maintenance"
+  url = "/en/categories/home-maintenance/"
+  weight = 5
+
+[params]
+  default_og_image = "/images/og-default.jpg"
+  logo = "/favicon.svg"
+  founding_year = "2026"
+  expertise = ["Rénovation et travaux", "Énergie et chauffage", "Électroménager et réparation"]
+  og_locale_alternate = "en_US"
+
+[related]
+  includeNewer = true
+  threshold = 80
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = true
+
+[outputFormats.SearchIndex]
+  mediaType = "application/json"
+  baseName = "search-index"
+  isPlainText = true
+  notAlternative = true
+
+[outputs]
+  home = ["HTML", "SearchIndex"]

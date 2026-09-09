@@ -1,0 +1,71 @@
+{{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $totalArticles := len (where site.RegularPages "Section" "blog") }}
+{{ $authorCount := len site.Data.authors }}
+
+<section class="list-header">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="{{ if eq $lang "en" }}Breadcrumb{{ else }}Fil d'Ariane{{ end }}">
+            <ol class="breadcrumb-list" style="justify-content:center;">
+                <li class="breadcrumb-item">
+                    <a href="{{ "/" | relURL }}" style="color:rgba(255,255,255,0.8);">{{ if eq $lang "en" }}Home{{ else }}Accueil{{ end }}</a>
+                    <svg class="breadcrumb-sep" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 4 10 8 6 12" /></svg>
+                </li>
+                <li class="breadcrumb-item">
+                    <span aria-current="page" style="color:#fff;">{{ .Title }}</span>
+                </li>
+            </ol>
+        </nav>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="list-description">{{ . }}</p>{{ end }}
+        <div class="authors-list-stats">
+            <div class="authors-stat">
+                <span class="authors-stat-value">{{ $authorCount }}</span>
+                <span class="authors-stat-label">{{ if eq $lang "en" }}experts{{ else }}experts{{ end }}</span>
+            </div>
+            <div class="authors-stat">
+                <span class="authors-stat-value">{{ $totalArticles }}</span>
+                <span class="authors-stat-label">{{ if eq $lang "en" }}articles published{{ else }}articles publiés{{ end }}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="list-content">
+    <div class="container">
+        <div class="authors-grid">
+            {{ range $slug, $data := site.Data.authors }}
+            {{ $articles := where site.RegularPages "Params.author" $slug }}
+            {{ $articles = where $articles "Section" "blog" }}
+            {{ $count := len $articles }}
+            {{ $authorURL := "" }}
+            {{ if eq $lang "en" }}{{ $authorURL = printf "authors/%s/" $slug | relURL }}{{ else }}{{ $authorURL = printf "auteurs/%s/" $slug | relURL }}{{ end }}
+            <article class="author-card">
+                <div class="author-card-header">
+                    {{ with $data.avatar }}
+                    <img src="{{ . | relURL }}" alt="{{ $data.name }}" class="author-card-avatar" width="88" height="88" loading="lazy">
+                    {{ else }}
+                    <span class="author-card-avatar author-avatar-placeholder" aria-hidden="true">{{ slicestr $data.name 0 1 }}</span>
+                    {{ end }}
+                    <div>
+                        <h2 class="author-card-name"><a href="{{ $authorURL }}">{{ $data.name }}</a></h2>
+                        {{ with index $data.jobTitle $lang }}<p class="author-card-job">{{ . }}</p>{{ end }}
+                    </div>
+                </div>
+                {{ with index $data.bio $lang }}<p class="author-card-bio">{{ . | truncate 160 }}</p>{{ end }}
+                {{ with index $data.expertise $lang }}
+                <div class="author-card-tags">
+                    {{ range first 3 . }}<span class="author-tag">{{ . }}</span>{{ end }}
+                </div>
+                {{ end }}
+                <div class="author-card-footer">
+                    <span class="author-card-count">{{ $count }} {{ if eq $lang "en" }}article{{ if gt $count 1 }}s{{ end }}{{ else }}article{{ if gt $count 1 }}s{{ end }}{{ end }}</span>
+                    <a href="{{ $authorURL }}" class="author-card-link">{{ if eq $lang "en" }}View profile{{ else }}Voir le profil{{ end }} <span aria-hidden="true">→</span></a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

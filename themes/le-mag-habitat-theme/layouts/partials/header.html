@@ -1,0 +1,155 @@
+{{ $lang := .Site.Language.Lang }}
+<header class="site-header">
+    <div class="header-container">
+        <a href="{{ "/" | relURL }}" class="site-logo" aria-label="{{ .Site.Title }}">
+            <svg class="site-logo-mark" width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 15L16 5L28 15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 13V26H25V13" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13 26V18H19V26" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="site-logo-text">{{ .Site.Title }}</span>
+        </a>
+
+        <nav class="site-nav" role="navigation" aria-label="{{ if eq $lang "en" }}Main navigation{{ else }}Navigation principale{{ end }}">
+            {{ range .Site.Menus.main }}
+            <a href="{{ .URL | relURL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">
+                {{ .Name }}
+            </a>
+            {{ end }}
+        </nav>
+
+        <div class="header-tools">
+            <div class="site-search">
+                <button type="button" class="search-toggle" aria-label="{{ if eq $lang "en" }}Search{{ else }}Rechercher{{ end }}" aria-expanded="false">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+                <div class="search-panel">
+                    <input type="search" class="search-input" placeholder="{{ if eq $lang "en" }}Search an article…{{ else }}Rechercher un article…{{ end }}" aria-label="{{ if eq $lang "en" }}Search an article{{ else }}Rechercher un article{{ end }}">
+                    <div class="search-results" role="listbox"></div>
+                </div>
+            </div>
+
+            <!-- Language switcher -->
+            {{ if gt (len .Site.Languages) 1 }}
+            <div class="lang-switcher" aria-label="Language switcher">
+                {{ $currentLang := .Site.Language.Lang }}
+                {{ range .Site.Languages }}
+                {{ $l := . }}
+                {{ if eq $l.Lang $currentLang }}
+                <span class="lang-current" aria-current="true">{{ upper $l.Lang }}</span>
+                {{ else }}
+                {{ $target := "" }}
+                {{ range $.Translations }}
+                    {{ if eq .Lang $l.Lang }}{{ $target = .Permalink }}{{ end }}
+                {{ end }}
+                {{ if not $target }}
+                    {{ $target = printf "/%s/" $l.Lang }}
+                {{ end }}
+                <a href="{{ $target }}" class="lang-link" hreflang="{{ $l.Lang }}">{{ upper $l.Lang }}</a>
+                {{ end }}
+                {{ end }}
+            </div>
+            {{ end }}
+
+            <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </div>
+
+    <nav class="nav-mobile" aria-label="{{ if eq $lang "en" }}Mobile navigation{{ else }}Navigation mobile{{ end }}">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL | relURL }}" class="nav-link-mobile">{{ .Name }}</a>
+        {{ end }}
+        {{ if gt (len .Site.Languages) 1 }}
+        <div class="lang-switcher-mobile">
+            {{ $currentLangM := .Site.Language.Lang }}
+            {{ range .Site.Languages }}
+            {{ $l := . }}
+            {{ if eq $l.Lang $currentLangM }}
+            <span class="lang-current" aria-current="true">{{ upper $l.Lang }}</span>
+            {{ else }}
+            {{ $target := "" }}
+            {{ range $.Translations }}
+                {{ if eq .Lang $l.Lang }}{{ $target = .Permalink }}{{ end }}
+            {{ end }}
+            {{ if not $target }}
+                {{ $target = printf "/%s/" $l.Lang }}
+            {{ end }}
+            <a href="{{ $target }}" class="lang-link" hreflang="{{ $l.Lang }}">{{ upper $l.Lang }}</a>
+            {{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+    </nav>
+</header>
+
+<script>
+(function() {
+    var toggle = document.querySelector('.menu-toggle');
+    var mobileNav = document.querySelector('.nav-mobile');
+    if (toggle && mobileNav) {
+        toggle.addEventListener('click', function() {
+            var isOpen = mobileNav.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+    }
+
+    var searchToggle = document.querySelector('.search-toggle');
+    var searchWrap = document.querySelector('.site-search');
+    var searchInput = document.querySelector('.search-input');
+    var resultsBox = document.querySelector('.search-results');
+    var indexData = null;
+    var indexUrl = {{ "search-index.json" | relURL }};
+
+    function closeSearch() {
+        searchWrap.classList.remove('open');
+        searchToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    if (searchToggle && searchWrap && searchInput) {
+        searchToggle.addEventListener('click', function() {
+            var isOpen = searchWrap.classList.toggle('open');
+            searchToggle.setAttribute('aria-expanded', String(isOpen));
+            if (isOpen) {
+                searchInput.focus();
+                if (!indexData) {
+                    fetch(indexUrl).then(function(r) { return r.json(); }).then(function(d) { indexData = d; }).catch(function() { indexData = []; });
+                }
+            } else {
+                resultsBox.innerHTML = '';
+                searchInput.value = '';
+            }
+        });
+
+        searchInput.addEventListener('input', function() {
+            var q = searchInput.value.trim().toLowerCase();
+            resultsBox.innerHTML = '';
+            if (!q || !indexData) return;
+            var matches = indexData.filter(function(item) {
+                return item.title.toLowerCase().indexOf(q) !== -1 || (item.description || '').toLowerCase().indexOf(q) !== -1;
+            }).slice(0, 6);
+            matches.forEach(function(item) {
+                var a = document.createElement('a');
+                a.href = item.url;
+                a.className = 'search-result-item';
+                a.innerHTML = '<span class="search-result-category">' + item.category + '</span><span class="search-result-title">' + item.title + '</span>';
+                resultsBox.appendChild(a);
+            });
+            if (matches.length === 0) {
+                var empty = document.createElement('p');
+                empty.className = 'search-result-empty';
+                empty.textContent = {{ if eq $lang "en" }}'No results'{{ else }}'Aucun résultat'{{ end }};
+                resultsBox.appendChild(empty);
+            }
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!searchWrap.contains(e.target)) closeSearch();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeSearch();
+        });
+    }
+})();
+</script>
