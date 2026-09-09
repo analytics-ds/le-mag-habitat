@@ -1,4 +1,4 @@
-baseURL = "https://le-mag-habitat.fr/"
+baseURL = "https://analytics-ds.github.io/le-mag-habitat/"
 title = "Le Mag Habitat"
 theme = "le-mag-habitat-theme"
 removePathAccents = true
