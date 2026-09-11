@@ -1,8 +1,8 @@
 ---
-title: "How to clean an oven without chemicals"
-description: "Natural, effective methods to deep-clean and degrease an oven without harsh chemical products."
+title: "Cleaning an oven without chemicals"
+description: "Natural and effective methods to degrease and deep clean an oven, without harsh products."
 date: 2026-08-31
-lastmod: 2026-08-31
+lastmod: 2026-09-11
 categories: ["Home maintenance"]
 tags: ["Cleaning", "Natural"]
 translationKey: "article-nettoyer-four-sans-produits-chimiques"
@@ -13,45 +13,58 @@ imageCredit: "Photo by Ben Sutherland via Flickr (CC BY 2.0)"
 draft: false
 faq:
   - question: "How can I clean an oven without chemicals?"
-    answer: "Baking soda mixed with water into a paste, applied to the walls and left to sit for several hours, loosens baked-on grease without resorting to harsh chemical products."
+    answer: "Baking soda mixed with water, applied as a paste on the walls and left to sit for several hours, loosens baked-on grease without resorting to harsh chemical products."
   - question: "Is white vinegar effective for cleaning an oven?"
-    answer: "Yes, white vinegar is effective for degreasing and deodorising an oven, often used alongside baking soda to reinforce the cleaning action."
-  - question: "How often should you clean your oven?"
-    answer: "A full clean every one to two months is generally enough for everyday use, with a quick wipe after any particularly greasy cooking session to avoid grease build-up."
+    answer: "Yes, white vinegar is effective at degreasing and deodorising an oven, and is often used together with baking soda to boost the cleaning action."
+  - question: "How often should an oven be cleaned?"
+    answer: "A full clean every one to two months is generally enough for everyday use, with a quick wipe after each messy cooking session to prevent grease build-up."
+  - question: "How can I clean a fan oven without damaging it?"
+    answer: "Direct wetting of the fan at the back of the oven should be avoided. The baking soda paste is applied to the side walls and door, left to dry, then rinsed with a barely damp sponge rather than a jet of water."
+  - question: "How can I clean a self-cleaning or pyrolytic oven?"
+    answer: "A pyrolytic oven cleans itself by heating to a very high temperature, reducing residue to ash that only needs wiping away once the cycle has finished and the appliance has cooled, with no product or scrubbing needed."
 ---
 
 Cleaning an oven without chemicals is entirely possible, using simple ingredients already found in most kitchens.
 
 ## In brief
 
-1. A baking soda paste effectively loosens baked-on grease.
-2. White vinegar reinforces the cleaning action and deodorises the oven.
-3. Enough sitting time is essential for the best result.
-4. Lemon can complement the process for a fresher smell.
-5. Regular upkeep avoids the need for deep scrubbing every time.
+1. Baking soda paste effectively loosens baked-on grease.
+2. White vinegar boosts the cleaning action and deodorises the oven.
+3. Enough resting time is essential for the best result.
+4. Lemon can add a pleasant scent to finish.
+5. Some oven types (fan ovens, pyrolytic ovens) require specific precautions.
+6. Regular upkeep avoids having to scrub deeply every time.
 
 ## The baking soda method
 
-Mix baking soda with a little water into a paste, then apply it to the oven's interior walls, avoiding the heating elements. Leave it to sit for several hours, ideally overnight, before wiping it off with a damp sponge.
+Mix baking soda with a little water until a paste forms, then apply it to the inside walls of the oven, avoiding the heating elements. Leave to sit for several hours, ideally overnight, before removing with a damp sponge.
 
-## Reinforcing the action with white vinegar
+## Boosting the action with white vinegar
 
 | Ingredient | Role |
 |---|---|
 | Baking soda | Loosens baked-on grease |
 | White vinegar | Degreases and deodorises |
-| Lemon | Reinforces the deodorising effect |
+| Lemon | Boosts the deodorising effect |
 
-Spraying white vinegar onto the already applied baking soda paste creates a reaction that further helps loosen the most stubborn residue.
+Spraying white vinegar onto the baking soda paste already applied creates a reaction that further loosens the toughest residue. For a very dirty oven, leaving the baking soda and vinegar mix to work overnight before rinsing gives the best results, without needing to scrub hard the next day.
 
-## A simple habit after each use
+## Cleaning a fan oven without damaging it
 
-Wiping with a damp sponge after each greasy cooking session limits grease build-up and makes deep cleaning less frequent and less tedious.
+Fan ovens have a fan at the back of the cavity that needs protecting from direct moisture. The baking soda paste normally goes on the side walls, the top and the door, but it is best to avoid applying it directly onto the fan grille. Rinsing is done with a barely damp sponge rather than a jet of water, to avoid water running towards the fan motor.
 
-## Maintaining your home, an overall habit
+## The special case of self-cleaning and pyrolytic ovens
 
-This kind of natural tip is part of a broader home maintenance approach, alongside [organising everyday home life](/en/blog/organise-daily-home-life/) or optimising [storage in small spaces](/en/blog/small-space-storage-tips/).
+Some recent ovens include a self-cleaning function. A pyrolytic oven heats to a very high temperature (close to 500°C) to reduce cooking residue to ash, which only needs wiping away once the cycle has finished and the appliance has fully cooled. No product, neither baking soda nor vinegar, is needed in this case: it is enough to start the cycle from the programmer, making sure to ventilate the room well during the process.
 
-## Also good for the budget
+## A simple habit after every use
 
-Using natural, low-cost products for everyday cleaning also helps reduce spending on household products, alongside the savings made on the [electricity bill](/en/blog/reduce-electricity-bill/).
+Wiping with a damp sponge after each messy cooking session limits grease build-up and makes deep cleaning less frequent and less tedious.
+
+## Home maintenance, a broader habit
+
+This kind of natural tip fits into a broader approach to home upkeep, alongside [organising everyday home life](/en/blog/organise-daily-home-life/) or optimising [storage in small spaces](/en/blog/small-space-storage-tips/).
+
+## A habit that's also good for the budget
+
+Using natural, low-cost products for everyday cleaning also helps cut spending on household products, alongside savings made on the [electricity bill](/en/blog/reduce-electricity-bill/).
