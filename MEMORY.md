@@ -12,3 +12,4 @@ Le champ `mode`/`score` ne s'applique qu'aux articles `auto`.
 9 articles publiés manuellement avant le 2026-09-24 dans `content/blog/` (lire ce dossier pour le détail : lire-facture-electricite, reparer-remplacer-electromenager, nettoyer-four-sans-produits-chimiques, amenager-terrasse-petit-budget, reduire-facture-electricite, isolation-combles-par-ou-commencer, astuces-rangement-petit-espace, fuite-eau-premiers-gestes-plombier, organiser-quotidien-maison).
 
 ## Semaine du 2026-09-24
+- 2026-09-24 | Chèque énergie : qui peut en bénéficier ? (FR+EN) | Énergie et consommation | manuel (via feuille roadmap Google Sheets)
