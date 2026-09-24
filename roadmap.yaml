@@ -1,0 +1,629 @@
+# Roadmap editoriale evergreen - Le Mag Habitat
+#
+# Articles SEO informationnels, full auto via /create-article-auto.
+# Cadence : 2 publications par semaine (mardi + vendredi).
+# Source mots-cles : feuille Google Sheets "Roadmap SEO - Le Mag Habitat"
+# (https://docs.google.com/spreadsheets/d/1ZBShGV1lBE72pNEgmt5Rek6XpwO9KDaxLrYpMYGvKdA),
+# import du 2026-09-24, 53 entrees (25 "Oui" + 28 "Oui - retravailler angle").
+#
+# Aucun champ d'angle n'est reporte ici volontairement : le titre et l'angle sont
+# toujours generes par l'agent a partir du mot-cle et de l'analyse SERP (etape 2 du
+# SKILL.md), jamais copies depuis un angle suggere. C'est ce qui permet de couvrir
+# aussi les sujets marques "a retravailler" sans reprendre un angle deja ecarte.
+#
+# Ordre : round-robin par thematique (volume decroissant au sein de chaque
+# thematique) pour alterner les categories a chaque publication.
+#
+# Format documente dans .claude/templates/roadmap-template.yaml
+
+articles:
+
+  # ============ Semaine 39 (21/09 - 27/09) ============
+  - kw: "chèque énergie"
+    category: "Énergie et consommation"
+    volume: 450000
+    kd: null
+    scheduled_date: "2026-09-25"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 40 (28/09 - 04/10) ============
+  - kw: "indice de réparabilité"
+    category: "Équipement et réparation"
+    volume: 1600
+    kd: null
+    scheduled_date: "2026-09-29"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "RGE"
+    category: "Travaux et rénovation"
+    volume: 12100
+    kd: null
+    scheduled_date: "2026-10-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 41 (05/10 - 11/10) ============
+  - kw: "aménager petite salle de bain"
+    category: "Aménagement et décoration"
+    volume: 390
+    kd: null
+    scheduled_date: "2026-10-06"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "entretien annuel chaudière"
+    category: "Entretien de la maison"
+    volume: 320
+    kd: null
+    scheduled_date: "2026-10-09"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 42 (12/10 - 18/10) ============
+  - kw: "CEE"
+    category: "Énergie et consommation"
+    volume: 27100
+    kd: null
+    scheduled_date: "2026-10-13"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "nettoyer filtre machine à laver"
+    category: "Équipement et réparation"
+    volume: 1300
+    kd: null
+    scheduled_date: "2026-10-16"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 43 (19/10 - 25/10) ============
+  - kw: "isolant thermique"
+    category: "Travaux et rénovation"
+    volume: 12100
+    kd: null
+    scheduled_date: "2026-10-20"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "aménager buanderie"
+    category: "Aménagement et décoration"
+    volume: 320
+    kd: null
+    scheduled_date: "2026-10-23"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 44 (26/10 - 01/11) ============
+  - kw: "entretenir climatisation"
+    category: "Entretien de la maison"
+    volume: 210
+    kd: null
+    scheduled_date: "2026-10-27"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "chauffage d'appoint économique"
+    category: "Énergie et consommation"
+    volume: 5400
+    kd: null
+    scheduled_date: "2026-10-30"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 45 (02/11 - 08/11) ============
+  - kw: "four ne chauffe plus"
+    category: "Équipement et réparation"
+    volume: 320
+    kd: null
+    scheduled_date: "2026-11-03"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "isolation par l'extérieur"
+    category: "Travaux et rénovation"
+    volume: 9900
+    kd: null
+    scheduled_date: "2026-11-06"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 46 (09/11 - 15/11) ============
+  - kw: "optimiser petite cuisine"
+    category: "Aménagement et décoration"
+    volume: 110
+    kd: null
+    scheduled_date: "2026-11-10"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "nettoyer hotte de cuisine"
+    category: "Entretien de la maison"
+    volume: 170
+    kd: null
+    scheduled_date: "2026-11-13"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 47 (16/11 - 22/11) ============
+  - kw: "chauffage électrique"
+    category: "Énergie et consommation"
+    volume: 5400
+    kd: null
+    scheduled_date: "2026-11-17"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "signes remplacer électroménager"
+    category: "Équipement et réparation"
+    volume: 260
+    kd: null
+    scheduled_date: "2026-11-20"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 48 (23/11 - 29/11) ============
+  - kw: "rénovation salle de bain"
+    category: "Travaux et rénovation"
+    volume: 9900
+    kd: null
+    scheduled_date: "2026-11-24"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "aménager petit salon"
+    category: "Aménagement et décoration"
+    volume: 70
+    kd: null
+    scheduled_date: "2026-11-27"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 49 (30/11 - 06/12) ============
+  - kw: "entretenir poêle à bois"
+    category: "Entretien de la maison"
+    volume: 110
+    kd: null
+    scheduled_date: "2026-12-01"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "aide pompe à chaleur"
+    category: "Énergie et consommation"
+    volume: 4400
+    kd: null
+    scheduled_date: "2026-12-04"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 50 (07/12 - 13/12) ============
+  - kw: "tarif réparation lave-linge"
+    category: "Équipement et réparation"
+    volume: 260
+    kd: null
+    scheduled_date: "2026-12-08"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "audit énergétique"
+    category: "Travaux et rénovation"
+    volume: 6600
+    kd: null
+    scheduled_date: "2026-12-11"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 51 (14/12 - 20/12) ============
+  - kw: "checklist entretien maison printemps"
+    category: "Entretien de la maison"
+    volume: 50
+    kd: null
+    scheduled_date: "2026-12-15"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "transition énergétique"
+    category: "Énergie et consommation"
+    volume: 3600
+    kd: null
+    scheduled_date: "2026-12-18"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 52 (21/12 - 27/12) ============
+  - kw: "sèche-linge panne"
+    category: "Équipement et réparation"
+    volume: 170
+    kd: null
+    scheduled_date: "2026-12-22"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "fibre de bois"
+    category: "Travaux et rénovation"
+    volume: 3600
+    kd: null
+    scheduled_date: "2026-12-25"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 53 (28/12 - 03/01) ============
+  - kw: "checklist entretien maison hiver"
+    category: "Entretien de la maison"
+    volume: 40
+    kd: null
+    scheduled_date: "2026-12-29"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "MaPrimeRénov"
+    category: "Énergie et consommation"
+    volume: 3600
+    kd: null
+    scheduled_date: "2027-01-01"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 1 (04/01 - 10/01) ============
+  - kw: "panne réfrigérateur"
+    category: "Équipement et réparation"
+    volume: 170
+    kd: null
+    scheduled_date: "2027-01-05"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "laine de verre ou laine de roche"
+    category: "Travaux et rénovation"
+    volume: 1900
+    kd: null
+    scheduled_date: "2027-01-08"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 2 (11/01 - 17/01) ============
+  - kw: "chauffage électrique ou gaz"
+    category: "Énergie et consommation"
+    volume: 260
+    kd: null
+    scheduled_date: "2027-01-12"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "réfrigérateur ne fait plus de froid"
+    category: "Équipement et réparation"
+    volume: 110
+    kd: null
+    scheduled_date: "2027-01-15"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 3 (18/01 - 24/01) ============
+  - kw: "rénover une cuisine"
+    category: "Travaux et rénovation"
+    volume: 110
+    kd: null
+    scheduled_date: "2027-01-19"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "veille électrique appareils"
+    category: "Énergie et consommation"
+    volume: 60
+    kd: null
+    scheduled_date: "2027-01-22"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 4 (25/01 - 31/01) ============
+  - kw: "prolonger durée de vie électroménager"
+    category: "Équipement et réparation"
+    volume: 110
+    kd: null
+    scheduled_date: "2027-01-26"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "VMC après isolation"
+    category: "Travaux et rénovation"
+    volume: 110
+    kd: null
+    scheduled_date: "2027-01-29"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 5 (01/02 - 07/02) ============
+  - kw: "lire son DPE"
+    category: "Énergie et consommation"
+    volume: 20
+    kd: null
+    scheduled_date: "2027-02-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "détartrer lave-vaisselle"
+    category: "Équipement et réparation"
+    volume: 90
+    kd: null
+    scheduled_date: "2027-02-05"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 6 (08/02 - 14/02) ============
+  - kw: "choisir artisan RGE"
+    category: "Travaux et rénovation"
+    volume: 70
+    kd: null
+    scheduled_date: "2027-02-09"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "réduire consommation eau chaude"
+    category: "Énergie et consommation"
+    volume: 20
+    kd: null
+    scheduled_date: "2027-02-12"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 7 (15/02 - 21/02) ============
+  - kw: "congélateur qui givre"
+    category: "Équipement et réparation"
+    volume: 90
+    kd: null
+    scheduled_date: "2027-02-16"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "rénover maison ancienne"
+    category: "Travaux et rénovation"
+    volume: 40
+    kd: null
+    scheduled_date: "2027-02-19"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 8 (22/02 - 28/02) ============
+  - kw: "étiquette énergie électroménager"
+    category: "Énergie et consommation"
+    volume: 20
+    kd: null
+    scheduled_date: "2027-02-23"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "panne lave-linge"
+    category: "Équipement et réparation"
+    volume: 90
+    kd: null
+    scheduled_date: "2027-02-26"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 9 (01/03 - 07/03) ============
+  - kw: "réduire consommation chauffage"
+    category: "Énergie et consommation"
+    volume: 20
+    kd: null
+    scheduled_date: "2027-03-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "garantie légale électroménager"
+    category: "Équipement et réparation"
+    volume: 70
+    kd: null
+    scheduled_date: "2027-03-05"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 10 (08/03 - 14/03) ============
+  - kw: "consommation lave-linge"
+    category: "Équipement et réparation"
+    volume: 70
+    kd: null
+    scheduled_date: "2027-03-09"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "four chaleur tournante ou traditionnelle"
+    category: "Équipement et réparation"
+    volume: 70
+    kd: null
+    scheduled_date: "2027-03-12"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 11 (15/03 - 21/03) ============
+  - kw: "vieil appareil consommation"
+    category: "Équipement et réparation"
+    volume: 50
+    kd: null
+    scheduled_date: "2027-03-16"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "réparer soi-même électroménager"
+    category: "Équipement et réparation"
+    volume: 30
+    kd: null
+    scheduled_date: "2027-03-19"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  # ============ Semaine 12 (22/03 - 28/03) ============
+  - kw: "lave-vaisselle qui fuit"
+    category: "Équipement et réparation"
+    volume: 30
+    kd: null
+    scheduled_date: "2027-03-23"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "durée de vie électroménager"
+    category: "Équipement et réparation"
+    volume: 30
+    kd: null
+    scheduled_date: "2027-03-26"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
