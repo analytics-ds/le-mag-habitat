@@ -24,10 +24,10 @@ articles:
     volume: 450000
     kd: null
     scheduled_date: "2026-09-25"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-24"
+    published_url_fr: "https://le-mag-habitat.fr/blog/cheque-energie/"
+    published_url_en: "https://le-mag-habitat.fr/en/blog/france-energy-voucher/"
     error: null
 
   # ============ Semaine 40 (28/09 - 04/10) ============
