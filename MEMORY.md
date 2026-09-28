@@ -14,3 +14,6 @@ Le champ `mode`/`score` ne s'applique qu'aux articles `auto`.
 ## Semaine du 2026-09-24
 - 2026-09-24 | Chèque énergie : qui peut en bénéficier ? (FR+EN) | Énergie et consommation | manuel (via feuille roadmap Google Sheets)
 - 2026-09-25 | Où acheter un lave-linge reconditionné ? (FR+EN) | Équipement et réparation | manuel (comparatif GEO Murfy)
+
+## Semaine du 2026-09-28
+- 2026-09-28 | Indice de réparabilité : comment ça marche (FR+EN) | Équipement et réparation | auto | mode: datafer | score: 74/62 | image: pexels | AIO: déclenchée
