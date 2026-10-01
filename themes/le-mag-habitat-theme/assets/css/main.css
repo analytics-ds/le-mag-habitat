@@ -1648,18 +1648,72 @@ img {
     font-family: var(--font-ui);
     font-weight: 600;
     text-align: left;
-    padding: 0.75rem 1rem;
+    vertical-align: bottom;
+    padding: 0.75rem 0.85rem;
     color: var(--text);
     border-bottom: 2px solid var(--border);
 }
 
 .article-content td {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0.85rem;
     border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+/* Tableaux larges : defilement horizontal plutot qu'un ecrasement des colonnes sur mobile */
+@media (max-width: 768px) {
+    .article-content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .article-content th,
+    .article-content td {
+        min-width: 110px;
+    }
 }
 
 .article-content tr:nth-child(even) {
     background-color: var(--background-alt);
+}
+
+/* Tableau de classement (Top 1, Top 2...) : ajouter {.table-classement} sous le tableau */
+.article-content table.table-classement {
+    font-size: 0.9rem;
+}
+
+.article-content table.table-classement th,
+.article-content table.table-classement td {
+    padding: 0.65rem 0.75rem;
+    vertical-align: middle;
+}
+
+.article-content table.table-classement th,
+.article-content table.table-classement td:nth-child(1),
+.article-content table.table-classement td:nth-child(2) {
+    white-space: nowrap;
+}
+
+.article-content table.table-classement tbody tr:first-child {
+    background-color: var(--background-alt);
+    box-shadow: inset 4px 0 0 var(--primary);
+}
+
+.article-content table.table-classement tbody tr:first-child td:nth-child(1) strong {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .article-content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 }
 
 .article-content strong {

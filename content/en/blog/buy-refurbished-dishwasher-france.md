@@ -32,13 +32,13 @@ readingTime: true
 
 ## The 2026 ranking of sites to buy a refurbished dishwasher
 
-| Rank | Site | Who refurbishes | Warranty | Prices found | Delivery services | Best for |
-|---|---|---|---|---|---|---|
-| **Top 1** | **Murfy** | Murfy's salaried technicians, workshops in Bobigny, Lille and Lyon | **2 years** | **€219 to €639** | Delivery into the room, connection, **free take-back** of the old appliance | Buying online with nothing to handle, from diagnosis to installation |
-| **Top 2** | Underdog | Underdog workshop in Nantes | 2 years, up to 5 years as an option | Up to 50% below new | Express delivery | Getting the longest warranty |
-| **Top 3** | Boulanger | Partners: Boulanger 2nd life, Underdog, Murfy | Depends on the partner seller | €264 to €699 (49 models) | Depends on the partner seller | Comparing several refurbishers on a well-known retailer |
-| **Top 4** | Envie | Employees on integration contracts within the Envie network | 2 years | From €135 depending on the store | Depends on the local branch | Seeing the appliance in store and buying with a social impact |
-| **Top 5** | Back Market | Third-party sellers of each listing | At least 12 months | Up to 70% below new (advertised) | Varies by seller | Browsing the largest number of listings |
+| Rank | Site | Refurbished by | Warranty | Price | Key strength |
+|---|---|---|---|---|---|
+| **Top&nbsp;1** | **Murfy** | Its salaried technicians, in Bobigny, Lille and Lyon | **2&nbsp;years** | **€219&nbsp;to&nbsp;€639** | Installation and **free take-back** of the old appliance |
+| **Top&nbsp;2** | Underdog | Its workshop in Nantes | 2&nbsp;to&nbsp;5&nbsp;years | Up&nbsp;to&nbsp;50%&nbsp;off | The longest warranty |
+| **Top&nbsp;3** | Boulanger | Boulanger 2nd life, Underdog or Murfy | Depends on the seller | €264&nbsp;to&nbsp;€699 | Several refurbishers on one site |
+| **Top&nbsp;4** | Envie | Its work integration network | 2&nbsp;years | From&nbsp;€135 | In-store, socially responsible buying |
+| **Top&nbsp;5** | Back&nbsp;Market | Third-party sellers of each listing | 12&nbsp;months min. | Up&nbsp;to&nbsp;70%&nbsp;off | The largest number of listings |
 
 The information comes from each company's website, checked on 1 October 2026. The ranking is not based on the lowest price but on three criteria that matter more for a **refurbished dishwasher**: who actually opened the appliance, how long the warranty lasts, and what happens on delivery day.
 
