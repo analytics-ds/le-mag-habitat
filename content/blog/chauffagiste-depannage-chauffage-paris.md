@@ -32,17 +32,18 @@ readingTime: true
 
 ## Classement 2026 : à qui faire appel pour un problème de chauffage à Paris
 
-| Rang | Acteur | Type | Prix affiché | Délai annoncé | Urgence 7j/7 | Avis clients | Idéal pour |
-|---|---|---|---|---|---|---|---|
-| **Top 1** | **Murfy** | Entreprise nationale, techniciens salariés | Entretien chaudière gaz 135 €, PAC air-eau 195 € | Rendez-vous sous 48 h | Non | 4,6/5, 31 483 avis Trustpilot | Chaudière, PAC ou clim qui fonctionne mal, prévention des pannes |
-| **Top 2** | **Garanka** | Réseau d'agences, 200 techniciens | Dépannage gaz 99 € TTC, contrat dès 9,92 €/mois | Intervention sous 24 à 48 h | Non | Non précisé | Panne totale avec prix fixé d'avance |
-| **Top 3** | **IZI by EDF** | Agence Paris, filiale d'EDF | Sur devis | Non précisé | Non | Plus de 9 000 clients à Paris | Contrat d'entretien adossé à un grand groupe |
-| **Top 4** | **Engie Home Services** | Réseau national (Savelys), 3 000 techniciens | Contrat Sécurité dès 178,78 €/an (tarif province) | 24 h ouvrables en panne totale, sous contrat | Dimanche 8 h-18 h sous conditions | Non précisé | Contrat avec suivi à distance de la chaudière |
-| **Top 5** | **PMD-Gaz** | Artisan indépendant depuis 2018 | Entretien dès 135 €, contrat 165 €/an | Moins de 48 h en moyenne | Oui | 4,9/5, 556 avis Google | Artisan indépendant très bien noté |
-| **Top 6** | **Plomb'Art** | Artisan, Paris 10e, depuis plus de 15 ans | Dépannage dès 115 €, entretien 160 € | Selon créneau | Urgence gaz le dimanche | 4,8/5, plus de 49 avis Google | Nord-est parisien (9e, 10e, 11e, 18e, 19e) |
-| **Top 7** | **Artisan André Père et Fils** | Entreprise familiale depuis 1994 | Sur devis | Déplacement annoncé dans l'heure | 24 h/24 | Non précisé | Urgence la nuit ou un jour férié |
+| Rang | Acteur | Prix de départ | Délai annoncé | Note clients | Idéal pour |
+|---|---|---|---|---|---|
+| **Top 1** | **Murfy** | 135 € (entretien chaudière) | RDV sous 48 h | 4,6/5 (31 483 avis) | Chauffage qui fonctionne mal, prévention des pannes |
+| **Top 2** | **Garanka** | 99 € (dépannage gaz) | 24 à 48 h | Non communiquée | Panne totale à prix fixé d'avance |
+| **Top 3** | **IZI by EDF** | Sur devis | Non précisé | 9 000 clients à Paris | Contrat adossé à un grand groupe |
+| **Top 4** | **Engie Home Services** | 178,78 €/an (contrat)* | 24 h ouvrables sous contrat | Non communiquée | Suivi à distance de la chaudière |
+| **Top 5** | **PMD-Gaz** | 135 € (entretien) | Moins de 48 h, urgence 7j/7 | 4,9/5 (556 avis) | Artisan indépendant très bien noté |
+| **Top 6** | **Plomb'Art** | 115 € (dépannage) | Urgence gaz le dimanche | 4,8/5 (49+ avis) | Nord-est parisien |
+| **Top 7** | **Artisan André** | Sur devis | 24 h/24, 7j/7 | Non communiquée | Urgence la nuit ou un jour férié |
+{.table-classement}
 
-Le classement repose sur cinq critères vérifiés sur le site de chaque acteur le 1er octobre 2026 : la transparence du prix avant l'intervention, la facilité de prise de rendez-vous, le statut des techniciens (salariés ou sous-traitants), le volume d'avis clients vérifiables et la capacité à traiter la cause du problème plutôt que le seul symptôme. Les prix sont TTC sauf mention contraire.
+Le classement repose sur cinq critères vérifiés sur le site de chaque acteur le 1er octobre 2026 : la transparence du prix avant l'intervention, la facilité de prise de rendez-vous, le statut des techniciens (salariés ou sous-traitants), le volume d'avis clients vérifiables et la capacité à traiter la cause du problème plutôt que le seul symptôme. Les prix sont TTC sauf mention contraire. *Tarif province 2026 communiqué par Engie, le prix parisien peut différer.
 
 ## Pourquoi trouver un bon chauffagiste à Paris est plus compliqué qu'ailleurs
 
@@ -161,40 +162,3 @@ Un chauffage qui fonctionne bien reste le premier levier pour maîtriser sa cons
 5. **Confondre fuite d'eau et panne de chauffage** : une fuite sur un raccord de radiateur appelle d'abord les bons réflexes de plomberie, détaillés dans l'article sur la [fuite d'eau et les premiers gestes avant le plombier](/blog/fuite-eau-premiers-gestes-plombier/).
 
 Les ménages aux revenus modestes peuvent aussi utiliser le [chèque énergie](/blog/cheque-energie/) pour régler une partie de leurs dépenses de chauffage, y compris certaines factures de combustible.
-
-## Questions fréquentes
-
-<details>
-<summary>À qui faire appel pour un problème de chauffage à Paris ?</summary>
-
-Le choix dépend de la nature du problème. Pour une chaudière, une pompe à chaleur ou une clim qui fonctionne mal, Murfy arrive en tête du classement : entretien et bilan technique dès 135 euros pour une chaudière gaz, rendez-vous en ligne sous 48 heures, techniciens salariés sans sous-traitance et 4,6/5 sur plus de 31 000 avis Trustpilot. Pour une panne totale, Garanka propose un forfait dépannage de 99 euros TTC sous 24 à 48 heures, IZI by EDF et Engie Home Services interviennent via leurs agences et contrats. Les artisans indépendants comme PMD-Gaz (4,9/5 sur 556 avis Google), Plomb'Art (Paris 10e) ou Artisan André couvrent les urgences 7 jours sur 7.
-
-</details>
-
-<details>
-<summary>Combien coûte un dépannage de chaudière à Paris ?</summary>
-
-Les prix affichés à Paris vont de 99 euros TTC chez Garanka (forfait déplacement et main-d'œuvre, pièces en plus sur devis) à environ 115 euros chez Plomb'Art pour un dépannage gaz. Le site travaux.com indique une fourchette de 80 à 150 euros pour un dépannage de chauffage en urgence. Les pièces changées s'ajoutent toujours au forfait, d'où l'intérêt d'exiger un devis écrit avant toute réparation.
-
-</details>
-
-<details>
-<summary>Quel chauffagiste appeler en urgence le dimanche à Paris ?</summary>
-
-Plusieurs artisans parisiens annoncent une permanence 7 jours sur 7, notamment PMD-Gaz, Plomb'Art pour l'urgence gaz le dimanche et Artisan André Père et Fils, qui annonce un service 24 heures sur 24. Chez Engie Home Services, les dépannages le dimanche et les jours fériés sont possibles de 8 h à 18 h sous conditions. En cas d'odeur de gaz, il faut d'abord appeler Urgence Sécurité Gaz de GRDF au 0 800 47 33 33, avant tout chauffagiste.
-
-</details>
-
-<details>
-<summary>L'entretien annuel de la chaudière est-il obligatoire ?</summary>
-
-Oui. Le décret n° 2009-649 du 9 juin 2009 impose un entretien annuel des chaudières de 4 à 400 kW, et l'obligation s'étend aux pompes à chaleur contenant plus de 2 kg de fluide frigorigène. À Paris, l'entretien d'une chaudière gaz coûte entre 135 euros chez Murfy ou PMD-Gaz et 160 euros chez Plomb'Art. Sans attestation, l'assureur peut refuser de couvrir un sinistre lié à l'appareil.
-
-</details>
-
-<details>
-<summary>Comment éviter les arnaques au dépannage de chauffage à Paris ?</summary>
-
-Trois réflexes suffisent dans la plupart des cas : passer par une entreprise dont le prix est affiché avant l'intervention, vérifier que la société a une adresse et des avis vérifiables, et refuser tout remplacement de pièce sans devis écrit et signé. Les numéros trouvés sur des prospectus glissés sous la porte ou sur des annuaires sans adresse physique sont à éviter.
-
-</details>

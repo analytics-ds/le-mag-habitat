@@ -1696,7 +1696,8 @@ img {
 }
 
 .article-content table.table-classement tbody tr:first-child {
-    background-color: var(--background-alt);
+    background-color: color-mix(in srgb, var(--primary) 9%, var(--white));
+    font-weight: 600;
     box-shadow: inset 4px 0 0 var(--primary);
 }
 

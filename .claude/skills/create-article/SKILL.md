@@ -229,7 +229,7 @@ Les deux versions ont le meme schema de frontmatter, avec le champ `translationK
 | `image` | Chemin vers l'image hero (OBLIGATOIRE, rempli automatiquement a l'etape 1.5 par `fetch-image.sh`). **Meme image pour FR et EN** (on ne double pas le telechargement) |
 | `imageAlt` | Texte alt de l'image (OBLIGATOIRE). **Traduit dans la langue de l'article** (FR : en francais, EN : en anglais). Max 125 caracteres |
 | `imageCredit` | Credit photo (OBLIGATOIRE, rempli automatiquement). Meme credit dans les 2 langues |
-| `faq` | Liste de questions/reponses pour le schema FAQPage JSON-LD (min. 3). **Traduites dans la langue de l'article**. Les questions doivent correspondre a celles de la section FAQ dans le body |
+| `faq` | Liste de questions/reponses pour le schema FAQPage JSON-LD (min. 3). **Traduites dans la langue de l'article**. Pas de section FAQ dans le body : le bloc est genere par `single.html` |
 | Nom du fichier | Slug = query fan-out en minuscules, tirets, sans accents, **dans la langue de l'article** (FR : `bienfaits-the-vert.md`, EN : `green-tea-benefits.md`) |
 
 ### Regles GEO (Generative Engine Optimization)
@@ -256,7 +256,7 @@ Ces regles sont fondamentales pour que l'article soit cite par les moteurs IA ge
 | Mots-cles en gras | Oui, `**mot-cle**` |
 | Ton | Impersonnel (pas de je/tu/nous/vous) sauf si precise autrement dans le CLAUDE.md |
 | Liens internes | Min. 3 liens contextuels vers des articles existants (ancre = mot-cle de l'article cible) |
-| FAQ | 3-5 questions en fin d'article |
+| FAQ | 3-5 questions, frontmatter uniquement (affichage auto en fin d article) |
 | Separateurs | JAMAIS de separateur horizontal (---) entre les sections |
 | Tirets | JAMAIS de tiret cadratin ni demi-cadratin. Utiliser des virgules, des points ou reformuler |
 
@@ -292,9 +292,8 @@ Lire les commentaires HTML `<!-- NOTES POUR CLAUDE -->` en bas du template chois
 - [ ] Quick summary "En bref" auto-suffisant avec donnees chiffrees
 - [ ] Au moins 1 tableau recapitulatif
 - [ ] Au moins 1 citation sourcee (source + annee)
-- [ ] FAQ presente avec balises `<details>/<summary>` (accordeon) dans le body
+- [ ] Aucune section FAQ ni `<details>` dans le body (le bloc FAQ est genere par `single.html` depuis le frontmatter)
 - [ ] FAQ presente dans le frontmatter (champ `faq`, min. 3 questions) pour le schema FAQPage JSON-LD
-- [ ] Les questions FAQ du frontmatter et du body correspondent
 - [ ] `image`, `imageAlt` et `imageCredit` renseignes (auto via `fetch-image.sh`)
 - [ ] Fichier image present dans `static/images/blog/[slug].webp`
 - [ ] Pas de separateur horizontal (---) ni de tiret cadratin/demi-cadratin

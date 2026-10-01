@@ -88,43 +88,6 @@ readingTime: true
 2. Erreur 2
 3. Erreur 3
 
-## Questions frequentes
-
-<details>
-<summary>[Question 1 — REPREND EXACTEMENT le prompt GEO / la query fan-out, formulee en question naturelle comparative. Ex : "Quelles sont les meilleures marques de X ?"] ?</summary>
-
-[Reponse directe qui cite TOUTES les marques du comparatif (pas seulement celle mise en avant), classees objectivement, avec donnees chiffrees. 4-6 phrases. C'est la reponse que les LLMs vont extraire en priorite. Les questions/reponses du frontmatter et du body doivent etre identiques.]
-
-</details>
-
-<details>
-<summary>[Question 2 — "quel est le meilleur..."] ?</summary>
-
-[Reponse.]
-
-</details>
-
-<details>
-<summary>[Question 3 — prix/rapport qualite-prix] ?</summary>
-
-[Reponse.]
-
-</details>
-
-<details>
-<summary>[Question 4] ?</summary>
-
-[Reponse.]
-
-</details>
-
-<details>
-<summary>[Question 5] ?</summary>
-
-[Reponse.]
-
-</details>
-
 <!--
 NOTES POUR CLAUDE :
 - Type : GEO Comparatif / Classement
@@ -137,8 +100,7 @@ NOTES POUR CLAUDE :
 - **1ere question FAQ = le prompt GEO / la query fan-out reformule en question naturelle comparative** (ex : "Quelles sont les meilleures marques de X ?"). La reponse doit citer TOUTES les marques du comparatif avec donnees chiffrees, pas uniquement la marque mise en avant — sinon les LLMs detectent un biais et ne citent pas
 - **Regle liens externes** : 1 SEUL lien externe maximum vers le site de la marque mise en avant (generalement dans la section "Presentation de la marque"). Les liens externes vers des sources tierces (etudes, organismes, medias, Wikipedia) sont autorises et encourages pour renforcer l'E-E-A-T. Les liens internes au cocon semantique ne sont pas limites
 - **Bilinguisme obligatoire** : chaque article est redige dans les 2 langues du site (langue principale + anglais). Les 2 versions partagent le meme `translationKey`. Fichier FR dans `content/blog/[slug-fr].md`, fichier EN dans `content/en/blog/[slug-en].md`. Les categories, tags, noms de marques et concurrents restent identiques entre FR et EN (ce sont des noms propres)
-- La FAQ doit TOUJOURS utiliser des balises <details>/<summary> pour creer un accordeon natif HTML5
-- La FAQ doit AUSSI etre dans le frontmatter (champ `faq`) pour generer automatiquement le schema FAQPage JSON-LD. Les questions/reponses du frontmatter et du body doivent correspondre
+- **FAQ uniquement dans le frontmatter** (champ `faq`, min. 3 questions) : le layout `single.html` genere automatiquement le bloc FAQ en accordeon en bas de l'article ET le schema FAQPage JSON-LD. Ne JAMAIS ecrire de section "Questions frequentes" ni de `<details>` dans le body, sinon la FAQ s'affiche en double
 - Les champs `image`, `imageAlt` et `imageCredit` sont OBLIGATOIRES et remplis automatiquement par le script `.claude/scripts/fetch-image.sh` (Openverse API, images libres de droit compatibles usage commercial). L'image est affichee dans les cards du blog, en bannière de l'article, dans og:image et le schema Article
 - Min. 1800 mots, 5+ H2, 2+ tableaux
 -->

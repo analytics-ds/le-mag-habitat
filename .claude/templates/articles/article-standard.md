@@ -79,43 +79,6 @@ readingTime: true
 2. Etape 2 — [detail]
 3. Etape 3 — [detail]
 
-## Questions frequentes
-
-<details>
-<summary>[Question 1 — REPREND EXACTEMENT le prompt GEO / la query fan-out, formulee en question naturelle] ?</summary>
-
-[Reponse directe et structuree au prompt, 3-5 phrases, avec donnee chiffree. C'est la reponse que les LLMs vont extraire en priorite. Les questions/reponses du frontmatter et du body doivent etre identiques.]
-
-</details>
-
-<details>
-<summary>[Question 2 — variante du mot-cle] ?</summary>
-
-[Reponse.]
-
-</details>
-
-<details>
-<summary>[Question 3] ?</summary>
-
-[Reponse.]
-
-</details>
-
-<details>
-<summary>[Question 4] ?</summary>
-
-[Reponse.]
-
-</details>
-
-<details>
-<summary>[Question 5] ?</summary>
-
-[Reponse.]
-
-</details>
-
 <!--
 NOTES POUR CLAUDE :
 - Type : Article standard (SEO + GEO)
@@ -129,8 +92,7 @@ NOTES POUR CLAUDE :
 - Focus sur la structure Hn, la densite de mots-cles (1-2%), le maillage interne
 - Mots-cles principaux et secondaires en gras
 - Ton neutre, impersonnel, factuel
-- La FAQ doit TOUJOURS utiliser des balises <details>/<summary> pour creer un accordeon natif HTML5
-- La FAQ doit AUSSI etre dans le frontmatter (champ `faq`) pour generer automatiquement le schema FAQPage JSON-LD. Les questions/reponses du frontmatter et du body doivent correspondre
+- **FAQ uniquement dans le frontmatter** (champ `faq`, min. 3 questions) : le layout `single.html` genere automatiquement le bloc FAQ en accordeon en bas de l'article ET le schema FAQPage JSON-LD. Ne JAMAIS ecrire de section "Questions frequentes" ni de `<details>` dans le body, sinon la FAQ s'affiche en double
 - Les champs `image`, `imageAlt` et `imageCredit` sont OBLIGATOIRES et remplis automatiquement par le script `.claude/scripts/fetch-image.sh` (Openverse API, images libres de droit compatibles usage commercial). L'image est affichee dans les cards du blog, en bannière de l'article, dans og:image et le schema Article
 - Min. 1500 mots, 5+ H2, 1+ tableau, 1+ citation sourcee, 3-5 questions FAQ
 - **Bilinguisme obligatoire** : chaque article est redige dans les 2 langues du site (langue principale + anglais). Les 2 versions partagent le meme `translationKey`. Fichier FR dans `content/blog/[slug-fr].md`, fichier EN dans `content/en/blog/[slug-en].md`. Les categories et tags sont traduits selon le mapping documente dans le CLAUDE.md du site

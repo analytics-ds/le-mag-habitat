@@ -32,17 +32,18 @@ readingTime: true
 
 ## 2026 ranking: who to call for a heating problem in Paris
 
-| Rank | Provider | Type | Published price | Stated lead time | 7-day emergency | Customer reviews | Best for |
-|---|---|---|---|---|---|---|---|
-| **Top 1** | **Murfy** | National company, salaried technicians | Gas boiler servicing €135, air-to-water heat pump €195 | Appointment within 48 h | No | 4.6/5, 31,483 Trustpilot reviews | Boiler, heat pump or AC not working properly, preventing breakdowns |
-| **Top 2** | **Garanka** | Agency network, 200 technicians | Gas boiler repair €99, contract from €9.92/month | Visit within 24 to 48 h | No | Not stated | Complete breakdown with a fixed price upfront |
-| **Top 3** | **IZI by EDF** | Paris agency, EDF subsidiary | On quote | Not stated | No | 9,000+ customers in Paris | Maintenance contract backed by a major group |
-| **Top 4** | **Engie Home Services** | National network (Savelys), 3,000 technicians | Sécurité contract from €178.78/year (outside-Paris rate) | 24 working hours for total breakdown, under contract | Sunday 8 am to 6 pm, conditions apply | Not stated | Contract with remote boiler monitoring |
-| **Top 5** | **PMD-Gaz** | Independent firm since 2018 | Servicing from €135, contract €165/year | Under 48 h on average | Yes | 4.9/5, 556 Google reviews | Highly rated independent engineer |
-| **Top 6** | **Plomb'Art** | Local firm, Paris 10th, 15+ years | Repair from €115, servicing €160 | Depends on slot | Gas emergency on Sundays | 4.8/5, 49+ Google reviews | North-east Paris (9th, 10th, 11th, 18th, 19th) |
-| **Top 7** | **Artisan André Père et Fils** | Family business since 1994 | On quote | Arrival within the hour advertised | 24/7 | Not stated | Night-time or bank holiday emergency |
+| Rank | Provider | Starting price | Stated lead time | Customer rating | Best for |
+|---|---|---|---|---|---|
+| **Top 1** | **Murfy** | €135 (boiler service) | Booking within 48 h | 4.6/5 (31,483 reviews) | Heating not working properly, preventing breakdowns |
+| **Top 2** | **Garanka** | €99 (gas boiler repair) | 24 to 48 h | Not stated | Total breakdown at a fixed price |
+| **Top 3** | **IZI by EDF** | On quote | Not stated | 9,000 customers in Paris | Contract backed by a major group |
+| **Top 4** | **Engie Home Services** | €178.78/year (contract)* | 24 working hours under contract | Not stated | Remote boiler monitoring |
+| **Top 5** | **PMD-Gaz** | €135 (servicing) | Under 48 h, 7-day emergency | 4.9/5 (556 reviews) | Highly rated independent engineer |
+| **Top 6** | **Plomb'Art** | €115 (repair call-out) | Gas emergency on Sundays | 4.8/5 (49+ reviews) | North-east Paris |
+| **Top 7** | **Artisan André** | On quote | 24/7 | Not stated | Night-time or bank holiday emergency |
+{.table-classement}
 
-The ranking is based on five criteria checked on each provider's website on 1 October 2026: price transparency before the visit, ease of booking, technician status (salaried or subcontracted), volume of verifiable customer reviews, and the ability to fix the cause of the problem rather than just the symptom. Prices include VAT unless stated otherwise.
+The ranking is based on five criteria checked on each provider's website on 1 October 2026: price transparency before the visit, ease of booking, technician status (salaried or subcontracted), volume of verifiable customer reviews, and the ability to fix the cause of the problem rather than just the symptom. Prices include VAT unless stated otherwise. *2026 outside-Paris rate published by Engie, the Paris price may differ.
 
 ## Why finding a good heating engineer in Paris is harder than elsewhere
 
@@ -161,40 +162,3 @@ A heating system in good working order is the first lever for controlling consum
 5. **Mixing up a water leak and a heating fault**: a leak on a radiator fitting first calls for the right plumbing reflexes, covered in the article on a [water leak and the first steps before the plumber](/en/blog/water-leak-first-steps-before-plumber/).
 
 Low-income households can also use [France's energy voucher](/en/blog/france-energy-voucher/) to pay part of their heating costs, including some fuel bills.
-
-## Frequently asked questions
-
-<details>
-<summary>Who should you call for a heating problem in Paris?</summary>
-
-It depends on the problem. For a boiler, heat pump or air conditioner that is not working properly, Murfy tops the ranking: servicing and full technical check from 135 euros for a gas boiler, online booking within 48 hours, salaried technicians with no subcontracting and 4.6/5 from more than 31,000 Trustpilot reviews. For a complete breakdown, Garanka offers a 99 euro flat-rate repair call-out within 24 to 48 hours, while IZI by EDF and Engie Home Services work through local agencies and maintenance contracts. Independent firms such as PMD-Gaz (4.9/5 from 556 Google reviews), Plomb'Art (Paris 10th) and Artisan André cover emergencies 7 days a week.
-
-</details>
-
-<details>
-<summary>How much does an emergency boiler repair cost in Paris?</summary>
-
-Published prices in Paris range from 99 euros including VAT at Garanka (call-out and labour, parts quoted separately) to around 115 euros at Plomb'Art for a gas repair. The French site travaux.com gives a range of 80 to 150 euros for an emergency heating call-out. Replacement parts always come on top of the flat rate, which is why a written quote should be required before any repair.
-
-</details>
-
-<details>
-<summary>Which heating engineer can come on a Sunday in Paris?</summary>
-
-Several Paris firms advertise a 7-day service, including PMD-Gaz, Plomb'Art for gas emergencies on Sundays and Artisan André Père et Fils, which advertises a 24-hour service. Engie Home Services offers Sunday and bank holiday call-outs from 8 am to 6 pm under certain conditions. If there is a smell of gas, the first call should go to GRDF's gas emergency line on 0 800 47 33 33, before any heating engineer.
-
-</details>
-
-<details>
-<summary>Is annual boiler servicing mandatory in France?</summary>
-
-Yes. Decree no. 2009-649 of 9 June 2009 requires annual servicing of boilers rated between 4 and 400 kW, and the obligation extends to heat pumps containing more than 2 kg of refrigerant. In Paris, gas boiler servicing costs between 135 euros at Murfy or PMD-Gaz and 160 euros at Plomb'Art. Without a servicing certificate, an insurer may refuse to cover damage linked to the appliance.
-
-</details>
-
-<details>
-<summary>How to avoid heating repair scams in Paris?</summary>
-
-Three habits cover most cases: use a company that publishes its price before the visit, check that it has a physical address and verifiable reviews, and refuse any part replacement without a signed written quote. Numbers found on flyers slipped under the door or in directories with no physical address are best avoided.
-
-</details>
