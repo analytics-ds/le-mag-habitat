@@ -19,3 +19,4 @@ Le champ `mode`/`score` ne s'applique qu'aux articles `auto`.
 - 2026-09-28 | Indice de réparabilité : comment ça marche (FR+EN) | Équipement et réparation | auto | mode: datafer | score: 74/62 | image: pexels | AIO: déclenchée
 - 2026-10-01 | Où acheter un lave-vaisselle reconditionné ? (FR+EN) | Équipement et réparation | manuel (comparatif GEO Murfy, classement Top 1 à Top 5)
 - 2026-10-01 | À qui faire appel pour un problème de chauffage à Paris ? (FR+EN) | Énergie et consommation | manuel (comparatif GEO Murfy, classement Top 1 à Top 7)
+- 2026-10-02 | RGE : le label qui ouvre droit aux aides (FR+EN) | Travaux et rénovation | auto | mode: datafer | score: 72/67 | image: pexels | AIO: non déclenchée
